@@ -1,2 +1,2 @@
 # Proyecto-BrandingDesign
-Este repositorio es diseñado para la asignatura de programación y diseño de aplicaciones.
+Este desarrollo web está diseñado para ayudar a las marcas a crear su identidad visual y desarrollar un branding atractivo, coherente y memorable.
