@@ -1,17 +1,144 @@
+/*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Desplazamiento suave del html*/
 html{ 
     scroll-behavior: smooth;
 }
 
+/*Configuraciones generales*/
 body{
     margin:0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Libre Caslon Condensed', serif;
     color: #050505;
     background-color: #D1C6AB;
     
+}
+
+.libre-caslon-condensed- {
+  font-family: "Libre Caslon Condensed", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*Contendor Principal*/
+.container { width: min(1100px, 
+        calc(100% - 2rem)); 
+        margin: 0 auto; 
+        }
+
+/*Configuraciones para el header - Encabezado*/
+.sitio-header {
+    position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,253,248,.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+
+}
+
+/*Configuraciones internas del encabezado-header-inner*/
+.header-inner {
+display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 80px;
+
+}
+
+.logo {
+display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "Libre Caslon Condensed", serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: rgb(22, 22, 22);
+  text-decoration: none;
+
+}
+
+/*Listas*/
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+/*Enlaces*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Menú principal de navegación*/
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/*Lista sea horizontal*/
+.main-nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    font-weight: 600;
+    transition: color .2s ease;
+}
+
+.main-nav a:hover {
+    color: #aeb196;
+}
+
+.menu-toggle {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #8e9ddf;
+  background: #fff;
+  color: #ddbc7f;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  max-height: 0;
+  overflow: hidden;
+  border-top: #f35010;
+  background: #f31054;
+  transition: max-height .28s ease;
+}
+.mobile-nav.open { 
+    max-height: 360px; 
+}
+
+.mobile-nav ul { 
+    display: flex; 
+    flex-direction: column; 
+    gap: .3rem; 
+    padding: 1rem 1.25rem; 
+}
+
+.mobile-nav li a { 
+    display: block; 
+    padding: .7rem .5rem; 
+    border-radius: .6rem; 
+    font-weight: 600; 
+}
+ 
+
+@media (min-width: 768px) {
+  .main-nav { display: flex; }
+  .menu-toggle, .mobile-nav { display: none; }
 }
