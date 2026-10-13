@@ -60,9 +60,10 @@
 
 
     </nav>
-<button id="menu-toggle" class="menu-toggle" 
-aria-label="Abrir menú" aria-expanded="false" 
-aria-controls="mobile-menu">☰</button>
+<button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 </div>
 
 
@@ -97,34 +98,116 @@ aria-controls="mobile-menu">☰</button>
     <header>
 
     <main>
-        <!--SECCIÓN CARRUSEL-->
+        <!--HERO | CARRUSEL INTERACTIVO DE 3 IMAGENES-->
 
-      <section id="carrusel" class="carousel-section container">
-        <h2>Crea tu Marca</h2>
+      <section id="inicio" class="hero-section">
         <div class="carousel-track" id="carouseltrackebc">
-            <!--Primera imagen hero-->
-            <div class="carousel-slide">
+
+        <!--Diaposotiva 1 (BLYND)-->
+        <div class="carousel-slide">
+            <!--DIAPOSITIVA 1-->
                 <img src="img/hero1.jpg" alt="imagen home hero">
+                <div class="slide-overlay">
+                        <span class="badge">Experiencia Premium</span>
+                        <h1>El Cine <span class="highlight-yellow">En Tu Casa</span></h1>
+                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
             </div>
             
-            <!--Segunda imagen hero-->
+            <!--DIAPOSITIVA 2-->
              <div class="carousel-slide">
                 <img src="img/hero2.jpg" alt="imagen home hero">
+                <div class="slide-overlay">
+                        <span class="badge">Experiencia Premium</span>
+                        <h1>El Cine <span class="highlight-yellow">En Tu Casa</span></h1>
+                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
             </div>
 
-            <!--Tercer imagen hero-->
+            <!--DIAPOSITIVA 3-->
              <div class="carousel-slide">
                 <img src="img/hero3.jpg" alt="imagen home hero">
+                <div class="slide-overlay">
+                        <span class="badge">Experiencia Premium</span>
+                        <h1>El Cine <span class="highlight-yellow">En Tu Casa</span></h1>
+                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
             </div>
 
         </div>
 
+        <!--BOTONES DE NAVEGACIÓN DEL CARRUSEL-->
+         <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!--PUNTOS INDICADORES-->
+             <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
 
       </section> 
 
+      <!--SECCIÓN DE SERVICIOS-->
+      <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Soluciones de Entretenimiento en Casa</h3>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Diseño de Marcas</h4>
+                        <p>Asesoramiento integral para adaptar cualquier sala o habitación en un espacio cinematográfico cómodo y funcional.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Acústica Profesional</h4>
+                        <p>Tratamiento de audio e instalación de altavoces envolventes para una inmersión acústica completa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/hero4.jpg" alt="Experiencia cine en familia">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>PORQUE EL CRECIMIENTO EMPIEZA CUANDO ALGUIEN SIENTE QUE PERTENECE A TU MARCA.</h3>
+                    <p>En <strong>HOMVIE</strong>, bajo la dirección de Nicole Martin, integramos ingeniería de datos, 
+                        IA y diseño para crear ambientes de entretenimiento personalizados.</p>
+                    <p>Brindamos consultoría y soluciones a la medida de tu hogar para garantizar momentos inolvidables en familia.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Proyectos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 <h1> This is heading</h1>
-<p>This is a paragraph</p>
 
     </main>
     <footer>
