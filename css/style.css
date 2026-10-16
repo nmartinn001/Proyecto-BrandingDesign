@@ -6,109 +6,106 @@
 }
 
 /*Desplazamiento suave del html*/
-html{ 
+
+html {
     scroll-behavior: smooth;
 }
 
 /*Configuraciones generales*/
-body{
+
+body {
     margin:0;
-    font-family:'Libre Caslon Condensed', serif;
-    color: #050505;
-    background-color: #D1C6AB;
-    
+    font-family:'Playwrite CA Guides', arial, sans-serif;
+    color:rgb(172, 134, 76);
+    background-color: rgb(250, 247, 247);
+    overflow-x: hidden;
 }
 
-.libre-caslon-condensed- {
-  font-family: "Libre Caslon Condensed", serif;
-  font-optical-sizing: auto;
+.playwrite-ca-guides-regular {
+  font-family: "Playwrite CA Guides", cursive;
+  font-weight: 400;
   font-style: normal;
 }
 
-/*Contendor Principal*/
-.container { width: min(1100px, 
-        calc(100% - 2rem)); 
-        margin: 0 auto; 
-        }
+/* Contenedor principal */
+.container { width: min(1100px,
+            calc(100% - 2rem)); 
+            margin: 0 auto;
+            }
 
-/*Configuraciones para el header - Encabezado*/
+/*Configuraciones para el header-Encabezado*/
 .sitio-header {
     position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: rgba(255,253,248,.92);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line);
-
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255,253,248,.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
 }
 
-/*Configuraciones internas del encabezado-header-inner*/
+/* Configuraciones internas del encabezado-header-inner*/
 .header-inner {
-display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
 }
 
 .logo {
-display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: "Libre Caslon Condensed", serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: rgb(22, 22, 22);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: "Playwrite CA Guides", serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: rgb(111, 25, 25);
+    text-transform:uppercase ;
 }
 
-/*Listas*/
+/* Listas*/
 ul{
     list-style: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-/*Enlaces*/
+/* Enlaces*/
 a{
     text-decoration: none;
-    color: inherit;
+    color:inherit;
 }
 
-/*Menú principal de navegación*/
-.main-nav {
-    display: none;
+/*Menu principal de navegacion*/
+.main-nav{
+    display:flex;
 }
 
-/*Lista sea horizontal*/
+/*Lista sea Horizontal*/
 .main-nav ul {
-    display: flex;
+    display:flex;
     align-items: center;
     gap: 2rem;
 }
 
-.main-nav a {
+.main-nav a{
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: color .2s ease;
 }
 
-.main-nav a:hover {
-    color: #aeb196;
+.main-nav a:hover{
+    color: #f6f7fa;
 }
 
 .btn-contacto {
-    background-color: red;
-    color: black !important;
+    background-color:rgb(247, 247, 249);
+    color: rgb(111, 49, 25) !important;
     padding: 0.6rem 1.4rem;
     border-radius: 50px;
     font-weight: 700 !important;
     transition: transform 0.2s ease, background-color 0.2s ease !important;
 }
-
 .btn-contacto:hover {
-    background-color: pink;
+    background-color: greenyellow;
     transform: scale(1.04);
 }
 
@@ -118,9 +115,10 @@ a{
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid #8e9ddf;
+  border: 1px solid rgb(111, 25, 25
+  );
   background: #fff;
-  color: #ddbc7f;
+  color: #790086;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -128,37 +126,37 @@ a{
 .mobile-nav {
   max-height: 0;
   overflow: hidden;
-  background: #f31054;
-  transition: max-height 0.3s ease-in-out;
-  border-bottom: 1px solid rgba(246, 179, 36, 0.2);
+  border-top: 1px solid #782626;
+  background: white;
+  transition: max-height 0.3 ease-in-out;
+  border-bottom:1px solid rgb(254, 253, 253) ;
 }
-.mobile-nav.open { 
-    max-height: 300px; 
-}
+.mobile-nav.open { max-height: 360px; }
 
 .mobile-nav ul { 
     display: flex; 
     flex-direction: column; 
-    gap: 0.8rem; 
-    padding: 1rem 1.25rem; 
-}
+    gap: .3rem; 
+    padding: 1rem 1.5rem; }
 
-.mobile-nav a { 
+.mobile-nav li a { 
     display: block; 
     padding: 0.6rem 0; 
     font-weight: 600; 
 }
 
 .btn-contacto-mobile {
-    background-color: yellow;
-    color: blue;
+    background-color: var(--accent-yellow);
+    color: var(--bg-dark);
     text-align: center;
     border-radius: 8px;
     font-weight: 700;
-} 
+}
 
 @media (min-width: 768px) {
-  .main-nav { display: flex; }
+  .main-nav { 
+    display: flex; 
+}
   .menu-toggle, .mobile-nav { display: none; }
 }
 
@@ -170,24 +168,29 @@ a{
     overflow: hidden;
 }
 
-.carousel-track {
+
+.carousel-track{
     display:flex;
     width: 100%;
-    height: 100%;
+     height: 100%;
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.carousel-slide {
+.carousel-slide{
     min-width: 100%;
-    height: 100px;
+    height: 100%;
     position: relative;
+
+/* footer*/
+
+
 }
 
 .carousel-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position; center;
+    object-position: center;
 }
 
 .slide-overlay {
@@ -205,7 +208,7 @@ a{
 }
 
 .badge {
-    background-color: var(--accent-yellow);
+    background-color: var rgba(255, 255, 255, 0.6)
     color: var(--bg-dark);
     font-size: 0.8rem;
     font-weight: 800;
@@ -215,19 +218,16 @@ a{
     margin-bottom: 1rem;
     letter-spacing: 1px;
 }
-
 .badge-red {
     background-color: var(--accent-red);
     color: var(--text-white);
 }
-
 .slide-overlay h1 {
     font-size: clamp(2rem, 5vw, 3.8rem);
     font-weight: 900;
     margin-bottom: 1rem;
     line-height: 1.1;
 }
-
 .highlight-yellow { color: var(--accent-yellow); }
 .highlight-red { color: var(--accent-red); }
 .slide-overlay p {
@@ -236,7 +236,6 @@ a{
     color: var(--text-muted);
     margin-bottom: 1.8rem;
 }
-
 .btn-hero {
     background-color: var(--accent-yellow);
     color: var(--bg-dark);
@@ -245,12 +244,10 @@ a{
     border-radius: 50px;
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
 .btn-hero:hover {
     background-color: var(--accent-yellow-hover);
     transform: scale(1.05);
 }
-
 /* Flechas Direccionales */
 .carousel-arrow {
     position: absolute;
@@ -268,7 +265,6 @@ a{
     transition: all 0.3s ease;
     z-index: 10;
 }
-
 .carousel-arrow:hover {
     background: var(--accent-yellow);
     color: var(--bg-dark);
@@ -286,94 +282,81 @@ a{
     gap: 0.6rem;
     z-index: 10;
 }
-
 .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     border: none;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgb(117, 79, 54);
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .dot.active {
     background: var(--accent-yellow);
     width: 28px;
     border-radius: 10px;
 }
-
 /* ==========================================================================
    SECCIONES GENERALES (SERVICIOS Y NOSOTROS)
    ========================================================================== */
 .servicios-section, .nosotros-section {
     padding: 5rem 0;
 }
-
 .nosotros-section {
-    background-color: var(--bg-card);
+    background-color: rgb(245, 248, 248);
 }
-
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
 }
-
 .section-title h2 {
     color: var(--accent-yellow);
     font-size: 0.9rem;
     letter-spacing: 2px;
     margin-bottom: 0.4rem;
 }
-
 .section-title h3 {
     font-size: 2.2rem;
     font-weight: 800;
 }
-
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
-
 .card {
-    background: beige;
+    background: rgb(134, 20, 20);
     padding: 2.5rem;
     border-radius: 16px;
     border: 1px solid rgba(246, 179, 36, 0.1);
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
-
 .card:hover {
-    border-color: rgba(246, 179, 36, 0.5);
+    border-color: rgb(58, 38, 25);
     transform: translateY(-5px);
 }
-
 .card-icon {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: brown;
+    background: rgb(134, 20, 20);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
-.card-icon.yellow { color: white; }
-.card-icon.red { color: var(--accent-red); }
+.card-icon.yellow { color:#f9f9f7; }
+.card-icon.red { color: #f7fafa; }
 .card h4 {
+    color:rgb(255, 255, 255);
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
 }
-
 .card p {
-    color: var(--text-muted);
+    color:rgb(255, 255, 255);
     font-size: 0.95rem;
 }
-
 /* Estilos Nosotros */
 .nosotros-inner {
     display: flex;
@@ -381,7 +364,6 @@ a{
     gap: 3rem;
     align-items: center;
 }
-
 @media (min-width: 992px) {
     .nosotros-inner {
         flex-direction: row;
@@ -390,37 +372,31 @@ a{
         flex: 1;
     }
 }
-
 .nosotros-img img {
     width: 100%;
     border-radius: 16px;
     border: 3px solid rgba(246, 179, 36, 0.2);
 }
-
 .nosotros-info h2 {
     color: var(--accent-red);
     font-size: 0.9rem;
     letter-spacing: 2px;
     margin-bottom: 0.4rem;
 }
-
 .nosotros-info h3 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
 }
-
 .nosotros-info p {
     color: var(--text-muted);
     margin-bottom: 1rem;
 }
-
 .stats {
     display: flex;
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
-
 .stat-box {
     background: var(--bg-dark);
     padding: 1rem 2rem;
@@ -428,13 +404,11 @@ a{
     border: 1px solid rgba(246, 179, 36, 0.2);
     text-align: center;
 }
-
 .stat-num {
     display: block;
     font-size: 1.8rem;
     font-weight: 900;
 }
-
 .stat-lbl {
     font-size: 0.85rem;
     color: var(--text-muted);
@@ -449,7 +423,6 @@ a{
     }
 }
 
-/*FOOTER*/
 .footer-social {
   background: var(--bg);
   padding: 1.5rem 0;
@@ -469,7 +442,7 @@ a{
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(122, 53, 93, 0.1);
+  background: rgb(253, 252, 252);
   color: var(--primary-dark);
   transition: background 0.2s ease, transform 0.2s ease;
 }
@@ -481,7 +454,7 @@ a{
 }
 
 .footer-bottom {
-  background: #2a1f2f;
+  background: rgb(252, 252, 252);
   color: var(--light);
   text-align: center;
   padding: 1rem 0;

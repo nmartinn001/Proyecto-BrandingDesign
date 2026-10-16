@@ -1,240 +1,240 @@
 <!DOCTYPE html>
-<!--El Doctype indica el tipo de Documento HTML-->
-<!--Nicole Martin Nissen-->
-<!--Proyecto: Entregable 02 y 03-->
-<!--Blynd-->
+<!-- El Doctype indica el tipo de documento HTML -->
+<!-- Nombre: Nicole Martin Nissen-->
+<!--PROYECTO para ENTREGABLE 02 Y 03-->
+<!--BLYND-->
 <html lang="es">
+<!-- La etiqueta <html> indica el inicio del documento HTML y el atributo lang="es" 
+    especifica que el idioma principal del contenido es español -->
 
-<head>    
+<head>
+<!-- La etiqueta meta es para la configuración de la página web -->
      <meta charset="UTF-8">
-  <meta name="description" content="Desarrollo web para crear identidades visuales únicas.">
-  <meta name="keywords" content="branding, identidad, diseño, creatividad, marcas">
+  <meta name="description" content="Desarrollo web para crear identidades visuales únicas">
+  <meta name="keywords" content="Branding, Identidad, Diseño, Creatividad, Marcas">
   <meta name="author" content="Nicole Martin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
-<title>Blynd | Branding Design.</title>
-<!--La etiqueta Meta es para toda la configuración de la página web-->
-
-<title>Branding Design / Donde tu marca cobra vida </title>
-<!--El tag de title es para como quiero que se muestre en la web-->
+  <!-- Archivo externo -->
+  <link rel="stylesheet" href="css/style.css">
+<title>BLYND | Branding Design </title>
+<!-- El tag de title es para cómo quiero que me encuentren en la web -->
 </head>
 <body>
 
-
-<!--ENCABEZADO - HEADER-->
+<!--ENCABEZADO - HEADER -->
 <header class="sitio-header">
+<!-- La etiqueta header sirve para configurar el logo de la página web del lado izquierdo en la parte del encabezado -->
 
-    <div class="container header-inner">
-        <a href="#inicio"class="logo">
-            <span class="logo-icono">🐻</span>
+    <div class="container header-inner"> 
+        <a href="#inicio" class="logo">
+            <span class="logo-icono">📸</span>
             BLYND
         </a>
-    <!--Esto es solamente para el logo-->
-    <!--Nav es para mi barra de navegación-->
+
     <nav class="main-nav">
+    <!-- La etiqueta nav sirve para configurar el menú de navegación -->
         <ul>
             <li>
-            <a href="#Inicio">Inicio</a>  
+                <a href="#inicio">Inicio</a>
             </li>
-
 
             <li>
-            <a href="#Servicios">Servicios</a>  
+                <a href="#servicios">Servicios</a>
             </li>
-
-
-           <li>
-            <a href="#Nosotros">Nosotros</a>  
-            </li> 
 
             <li>
-            <a href="#Contacto">Contacto</a>  
+                <a href="#nosotros">About</a>
             </li>
 
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
         </ul>
 
-
     </nav>
-<button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+
+
+<!-- BOTÓN MENÚ MÓVIL -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-</div>
+        </button>
+    </div>
 
-
-<nav id="mobile-menu" class="mobile-nav">
+    <!-- NAVEGACIÓN MÓVIL -->
+    <nav id="mobile-menu" class="mobile-nav">
       <ul>
-         <li>
-            <a href="#Inicio">Inicio</a>  
+    <li>
+                <a href="#inicio">Inicio</a>
             </li>
 
-
             <li>
-            <a href="#Servicios">Servicios</a>  
+                <a href="#servicios">Servicios</a>
             </li>
 
-
-           <li>
-            <a href="#Nosotros">Nosotros</a>  
-            </li> 
+            <li>
+                <a href="#nosotros">About</a>
+            </li>
 
             <li>
-            <a href="#Contacto">Contacto</a>  
+                <a href="#contacto">Contacto</a>
             </li>
       </ul>
      
     </nav>
 
+    </header>
 
-
-    </div>
-
-
-    <header>
-
+        <!-- INICIO MAIN PRINCIPAL DEL DESARROLLO WEB -->
     <main>
-        <!--HERO | CARRUSEL INTERACTIVO DE 3 IMAGENES-->
+        <!-- SECCIÓN CARUSSEL INTERACTIVO DE 3 IMÁGENES -->
 
-      <section id="inicio" class="hero-section">
+    <section id="inicio" class ="hero-section">
         <div class="carousel-track" id="carouseltrackebc">
-
-        <!--Diaposotiva 1 (BLYND)-->
-        <div class="carousel-slide">
-            <!--DIAPOSITIVA 1-->
-                <img src="img/hero1.jpg" alt="imagen home hero">
+        
+            <!--Primera imagen hero-->
+            <div class="carousel-slide">
+                <img src="img/hero1.jpg" alt="imagen InFrame hero">
                 <div class="slide-overlay">
-                        <span class="badge">Experiencia Premium</span>
-                        <h1>El Cine <span class="highlight-yellow">En Tu Casa</span></h1>
-                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
-                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
-                    </div>
-            </div>
-            
-            <!--DIAPOSITIVA 2-->
-             <div class="carousel-slide">
-                <img src="img/hero2.jpg" alt="imagen home hero">
-                <div class="slide-overlay">
-                        <span class="badge">Experiencia Premium</span>
-                        <h1>El Cine <span class="highlight-yellow">En Tu Casa</span></h1>
-                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
-                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                        <span class="badge">BLYND</span>
+                        <h1>No Solo Existas. <span class="highlight-yellow"> Destaca. </span></h1>
+                        <p>Transformamos ideas en marcas que captan miradas, conectan emociones y dejan huella.</p>
+                        <a href="#servicios" class="btn-hero">Hazte Inolvidable</a>
                     </div>
             </div>
 
-            <!--DIAPOSITIVA 3-->
-             <div class="carousel-slide">
-                <img src="img/hero3.jpg" alt="imagen home hero">
+            <!--Segunda imagen hero-->
+            <div class="carousel-slide">
+                <img src="img/hero2.jpeg" alt="imagen InFrame1 hero">
                 <div class="slide-overlay">
-                        <span class="badge">Experiencia Premium</span>
-                        <h1>El Cine <span class="highlight-yellow">En Tu Casa</span></h1>
-                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
-                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                        <span class="badge">BLYND</span>
+                        <h1>Your Content <span class="highlight-yellow">Needs To Tell a Story</span></h1>
+                        <p>Be authentic, have your own identity, turn who you are into something everyone remembers..</p>
+                        <a href="#servicios" class="btn-hero">Create</a>
                     </div>
             </div>
 
+            <!--Tercera imagen hero-->
+            <div class="carousel-slide">
+                <img src="img/hero3.jpg" alt="imagen InFrame2 hero">
+                <div class="slide-overlay">
+                        <span class="badge">BLYND</span>
+                        <h1>Se TU Propia <span class="highlight-yellow">Inspiración</span></h1>
+                        <p>Construimos identidades visuales que reflejan quién eres y qué te hace diferente.</p>
+                        <a href="#servicios" class="btn-hero">Descubre tu potencial</a>
+                    </div>
+            </div>
         </div>
 
-        <!--BOTONES DE NAVEGACIÓN DEL CARRUSEL-->
-         <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+        <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
             <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
 
-            <!--PUNTOS INDICADORES-->
-             <div class="carousel-dots" id="carousel-dots">
+        <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
                 <button class="dot active" aria-label="Ir a diapositiva 1"></button>
                 <button class="dot" aria-label="Ir a diapositiva 2"></button>
                 <button class="dot" aria-label="Ir a diapositiva 3"></button>
             </div>
-
-      </section> 
-
-      <!--SECCIÓN DE SERVICIOS-->
-      <section id="servicios" class="servicios-section">
+        </section>
+    
+        <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
             <div class="container">
                 <div class="section-title">
                     <h2>NUESTROS SERVICIOS</h2>
-                    <h3>Soluciones de Entretenimiento en Casa</h3>
+                    <h3>Tu Identidad - Tu Impacto</h3>
                 </div>
 
-                <div class="cards-grid">
+               <div class="cards-grid">
                     <div class="card">
                         <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
-                        <h4>Diseño de Marcas</h4>
-                        <p>Asesoramiento integral para adaptar cualquier sala o habitación en un espacio cinematográfico cómodo y funcional.</p>
+                        <h4>Visual Identity</h4>
+                        <p>Crea logotipos, paletas de colores y tipografías que representen la esencia de tu marca.</p>
                     </div>
-
-                    <div class="card">
+                
+                 <div class="card">
                         <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
-                        <h4>Acústica Profesional</h4>
-                        <p>Tratamiento de audio e instalación de altavoces envolventes para una inmersión acústica completa.</p>
+                        <h4>Brand Stragety</h4>
+                        <p>Define la personalidad, los valores y el estilo que harán destacar a tu marca.</p>
+                    </div>
+                
+                <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Digitak Branding</h4>
+                        <p>Diseña contenido visual para redes sociales que conecte con tu audiencia y fortalezca tu identidad.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN NOSOTROS -->
+           <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                  <!-- SECCIÓN NOSOTROS -->
         <section id="nosotros" class="nosotros-section">
             <div class="container nosotros-inner">
                 <div class="nosotros-img">
-                    <img src="img/hero4.jpg" alt="Experiencia cine en familia">
+                   <img src="img/hero4.jpg" alt="imagen Blynd4 hero">
                 </div>
                 <div class="nosotros-info">
                     <h2>SOBRE NOSOTROS</h2>
-                    <h3>PORQUE EL CRECIMIENTO EMPIEZA CUANDO ALGUIEN SIENTE QUE PERTENECE A TU MARCA.</h3>
-                    <p>En <strong>HOMVIE</strong>, bajo la dirección de Nicole Martin, integramos ingeniería de datos, 
-                        IA y diseño para crear ambientes de entretenimiento personalizados.</p>
-                    <p>Brindamos consultoría y soluciones a la medida de tu hogar para garantizar momentos inolvidables en familia.</p>
+                    <h3>Porque el crecimiento comienza cuando alguien siente que tu marca también le pertenece..</h3>
+                    <p>En <strong> BLYND </strong> transformamos ideas en identidades visuales que conectan con las personas.</p>
+                    <p>Creamos marcas auténticas, con diseños únicos y una esencia propia, capaces de transmitir emociones, 
+                        contar historias y dejar una huella memorable.</p>
                     <div class="stats">
                         <div class="stat-box">
-                            <span class="stat-num yellow">+150</span>
-                            <span class="stat-lbl">Proyectos</span>
+                            <span class="stat-num yellow">01</span>
+                            <span class="stat-lbl">Unique Perspective</span>
                         </div>
                         <div class="stat-box">
-                            <span class="stat-num red">100%</span>
-                            <span class="stat-lbl">Satisfacción</span>
+                            <span class="stat-num red">∞</span>
+                            <span class="stat-lbl">Stories to Capture</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-<h1> This is heading</h1>
-
     </main>
-    <footer>
+
+<!-- FOOTER -->
+<footer>
   <div class="footer-social">
     <div class="container social-icons">
-      <a href="https://www.facebook.com/?locale=es_LA" aria-label="Facebook">
+      <a href="https://www.facebook.com/" aria-label="Facebook">
         <i class="fa-brands fa-facebook-f"></i>
       </a>
-      <a href="https://www.instagram.com/nicole.mnissen?stkn=MW9yaDJxdXZweXQzYw%3D%3D&utm_source=qr" aria-label="Instagram">
+      <a href="https://www.instagram.com/majitoveraa/" aria-label="Instagram">
         <i class="fa-brands fa-instagram"></i>
       </a>
-      <a href="https://www.youtube.com/?app=desktop&hl=es" aria-label="YouTube">
+      <a href="https://www.youtube.com/" aria-label="YouTube">
         <i class="fa-brands fa-youtube"></i>
       </a>
-      <a href="https://mx.linkedin.com/" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/majo-vera-8730a23a4/?isSelfProfile=true" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
-      <a href="https://x.com/?lang=es" aria-label="X (Twitter)">
+      <a href="https://x.com/" aria-label="X (Twitter)">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
-      &copy; <span id="anio"></span> BLYND | &copy;Todos los derechos reservados.
+      &copy; <span id="anio"></span> InFrame | Todos los derechos reservados.
     </div>
   </div>
+
 </footer>
 
 <script src="js/script.js"></script>
